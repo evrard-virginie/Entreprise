@@ -1,0 +1,263 @@
+/*GENERAL*/
+/*import de la police d'écriture*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+/*On accède au couleur par color: var(--nomCouleur)*/
+:root {
+    --black: #000;
+    --blue: #7186FF;
+    --green: #31869b;
+    --white: #FFF;
+    --grey: #EFEFEF;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    font-family: 'Merienda', cursive;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+a:hover {
+    color: var(--green);
+}
+h1 {
+    color: var(--green);
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#nameEntreprise {
+    color: var(--white);
+}
+h2 {
+    color: var(--green);
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h3 {
+    color: var(--green);
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*MENU*/
+#mainHeader {
+    background-color: var(--green);
+    top: 0;
+    width: 100%;
+}
+#logoImg {
+    width: 115px;
+    margin: 12px;
+}
+.navbar-light .navbar-text {
+    color: var(--white);
+    font-size: 22px;
+    margin-right: 16%;
+}
+li {
+    list-style-type: none;
+    display: inline-block; 
+    font-size: 20px; 
+}
+li a {
+    padding: 14px 16px;
+}
+.nav-link {
+    color: var(--white);
+    margin-top: 15px;
+}
+.nav-link:hover {
+    color: var(--black);
+}
+
+/*PAGE PRESTATIONS*/
+#titlePage {
+    margin-bottom: 7%;
+}
+a #downloadLinkPrestations {
+    font-weight: bolder;
+}
+.picture-left {
+    float: left;
+    margin: auto;
+    width: 30%;
+}
+.picture-right {
+    float: right;
+    margin: auto;
+    width: 30%;
+}
+.titlePrestation {
+    text-align: center;
+}
+.div-categoryContainer {
+    padding: 10px;
+    margin-left: 9em;
+    margin-right: 9em;
+    padding-bottom: 25px;
+} 
+.paragraph-right {
+    margin: 4% 10% 10% 40%;
+}
+.paragraph-left {
+    margin: 0% 40% 5% 10%;
+}
+.paragraph-right-maintenance {
+    margin: 7% 10% 15% 40%;
+}
+
+/*PAGE CONTACT*/
+#mainForm {
+    background: var(--grey);
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.col {
+    padding-bottom: 15px;
+}
+.btn-contact {
+    color: var(--white);
+    background-color: var(--green);
+    padding: 15px;
+    margin: 25px 0 15px 0;
+}
+.btn-contact:hover {
+    color: var(--green);
+    background-color: var(--white);
+    border: #31869b 1px solid;
+}
+.error {
+    color: red;
+    margin-top: 15px;
+}
+/*PAGE TRATEMENT ENVOI FORMULAIRE*/
+#titleEnvoiForm {
+    margin-bottom: 50px;
+}
+.messageEnvoiForm {
+    color: var(--black);
+    font-size: 25px;
+}
+#logoImgEnvoiForm {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 320px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+#lienRetourAccueil {
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+/*PAGE MENTIONS LEGALES / CGU*/
+#mainMentions a {
+    color: var(--green);
+}
+#mainMentions a:hover {
+    color: var(--black);
+}
+
+/*FOOTER*/
+footer {
+    background-color: var(--green);
+    color: var(--white);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#copyright {
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+#mainFooter a {
+    color: var(--white);
+
+}
+#mainFooter a:hover {
+    color: var(--black);
+}
+#mainFooter i {
+    padding-right: 8px;
+}
+
+/*Ecran de petite taille*/
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 19px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    /*Lien - logo - menu*/
+    li {
+        display: block;
+    }
+    li a {
+        font-size: 15px;
+    }
+    #logoImg {
+        width: 60px;
+        margin: 8px;
+    }
+    .navbar-light .navbar-text  {
+        color: var(--white);
+        font-size: 15px; 
+        margin-right: 7%;
+    }
+    /*PAGE PRESTATIONS*/
+    #titlePage {
+        font-size: 25px;
+    }
+    .picture-left {
+        margin-bottom: 20px;
+        width: 260px;
+    }
+    .picture-right {
+        margin-bottom: 20px;
+        width: 260px;
+    }
+    .titlePrestation {
+        text-align: center;
+    }
+    .div-categoryContainer {
+        padding: 10px;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding-bottom: 20px;
+    } 
+    .paragraph-right {
+        margin: 0% 3% 10% 3%;
+        font-size: 18px;
+    }
+    .paragraph-left {
+        margin: 0% 3% 5% 3%;
+        font-size: 18px;
+    }
+    .paragraph-right-maintenance {
+        margin: 0% 3% 15% 3%;
+        font-size: 18px;
+    }
+    /*MENTIONS LEGALES*/
+    #mainMentions .ulMentionsLegales li{
+        font-size: 15px;
+    }
+    /*FOOTER*/
+    #mainFooter a {
+        font-size: 13px;
+    }
+}
