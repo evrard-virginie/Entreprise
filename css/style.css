@@ -80,7 +80,7 @@ li a {
 }
 
 /*PAGE PRESTATIONS*/
-#titlePage {
+.titlePage {
     margin-bottom: 7%;
 }
 a #downloadLinkPrestations {
@@ -126,17 +126,6 @@ a #downloadLinkPrestations {
 .col {
     padding-bottom: 15px;
 }
-.btn-contact {
-    color: var(--white);
-    background-color: var(--green);
-    padding: 15px;
-    margin: 25px 0 15px 0;
-}
-.btn-contact:hover {
-    color: var(--green);
-    background-color: var(--white);
-    border: #31869b 1px solid;
-}
 .error {
     color: red;
     margin-top: 15px;
@@ -169,17 +158,51 @@ a #downloadLinkPrestations {
     color: var(--black);
 }
 
+/*PAGE REFERENCES*/
+#referencesMenu {
+    text-align: center;
+    padding: 25px 0 25px 0;
+}
+.buttonReferences {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(49, 134, 155, 1);
+    background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.buttonReferences:hover {
+    background-color: rgba(49, 134, 155, 0.85);
+}
+.buttonReferences:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+                inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 /*FOOTER*/
 footer {
     background-color: var(--green);
     color: var(--white);
-    text-align: center;
+    
     padding-top: 30px;
     padding-bottom: 20px;
 }
 #copyright {
     font-size: 18px;
     padding-bottom: 15px;
+    text-align: center;
+}
+#iconCopyright {
+    font-size: 25px;
 }
 #mainFooter a {
     color: var(--white);
