@@ -150,12 +150,15 @@ a #downloadLinkPrestations {
     font-size: 20px;
     margin-bottom: 70px;
 }
-/*PAGE MENTIONS LEGALES / CGU*/
+/*PAGE MENTIONS LEGALES*/
 #mainMentions a {
     color: var(--green);
 }
 #mainMentions a:hover {
     color: var(--black);
+}
+.list {
+    font-size: 16px;
 }
 
 /*PAGE REFERENCES*/
@@ -214,6 +217,15 @@ footer {
 #mainFooter i {
     padding-right: 8px;
 }
+
+/*PAGE PLAN DU SITE*/
+.sitemap {
+    margin-top: 4.5em;
+}
+#sitemapBottom {
+    margin-bottom: 3.5em;
+}
+
 
 /*Ecran de petite taille*/
 @media screen and (max-width: 768px) {
@@ -275,12 +287,13 @@ footer {
         margin: 0% 3% 15% 3%;
         font-size: 18px;
     }
-    /*MENTIONS LEGALES*/
-    #mainMentions .ulMentionsLegales li{
-        font-size: 15px;
-    }
+    
     /*FOOTER*/
     #mainFooter a {
         font-size: 13px;
     }
+    #copyright {
+        font-size: 11px;
+    }
+
 }
