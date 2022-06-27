@@ -67,6 +67,7 @@ li {
     list-style-type: none;
     display: inline-block; 
     font-size: 20px; 
+    padding-right: 25px;
 }
 li a {
     padding: 14px 16px;
@@ -164,7 +165,7 @@ a #downloadLinkPrestations {
 /*PAGE REFERENCES*/
 #referencesMenu {
     text-align: center;
-    padding: 25px 0 25px 0;
+    padding: 35px 0 35px 0;
 }
 .buttonReferences {
     border: 0;
@@ -189,6 +190,12 @@ a #downloadLinkPrestations {
 .buttonReferences:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
                 inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.referencesLanguage {
+    margin-bottom: 40px;
+}
+.referencesImage {
+    margin-bottom: 105px;
 }
 
 /*FOOTER*/
@@ -288,6 +295,11 @@ footer {
         font-size: 18px;
     }
     
+    /*PAGE REFERENCES*/
+    .sitePicture {
+        max-width: 100%;
+    }
+        
     /*FOOTER*/
     #mainFooter a {
         font-size: 13px;

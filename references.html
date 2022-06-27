@@ -13,9 +13,9 @@
 		<title>Re&#769;fe&#769;rences - Virginie - Développeuse Web</title>
 
 		 <!--Bootstrap CSS-->
-		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 		 <!--Bootstrap Icon-->
-		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 		 <!--CSS-->
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
@@ -41,9 +41,8 @@
 								<a class="nav-link" href="contact.html">Contact</a>
 							</li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Re&#769;fe&#769;rences</a>
+                                <a class="nav-link" href="references.html">Re&#769;fe&#769;rences</a>
                             </li>
-							<!--<a class="nav-link" href="#">Sous-traitance</a>-->
 						</ul>
 					</div>
 				</div>
@@ -53,16 +52,69 @@
 			<main>
                 <h1>Re&#769;fe&#769;rences</h1>
 					<p>
-                        Mes références, vous trouverez sur cette page les réalisations de site internet, vitrine, ainsi que mes projets personnels, pour en savoir plus un lien vers la page contact ainsi qu'un lien vers GitHub afin de voir mes repositories.
+                        Vous trouverez sur cette page mes références, les réalisations de site internet, ainsi que mes projets personnels. <!--, pour en savoir plus un lien vers la page contact ainsi qu'un lien vers GitHub afin de voir mes repositories.-->
                     </p>
                     <div id="referencesMenu">
-                        <button class="buttonReferences" type="button">Tout</button>
-                        <button class="buttonReferences" type="button">One-page</button>
-                        <button class="buttonReferences" type="button">Vitrine</button>
-                        <button class="buttonReferences" type="button">Application CLI</button>
-                        <button class="buttonReferences" type="button">Boilerplate</button>
+						<a href="#tout">
+							<button class="buttonReferences" type="button">Tout</button>
+						</a>
+						<!--<button class="buttonReferences" type="button">One-page</button>-->
+						<a href="#vitrine">
+							<button class="buttonReferences" type="button">Vitrine</button>
+						</a>
+						<a href="#cli">
+							<button class="buttonReferences" type="button">Application CLI</button>
+						</a>
+                        <!--<button class="buttonReferences" type="button">Plugin</button>-->
                     </div>
+					<section>
+						<div class="row referencesLanguage">
+							<div class="col">
+								<h2>Front</h2>
+								<p>HTML 5</p>
+								<p>CSS 3</p>
+							</div>
 
+							<div class="col">
+								<h2>Back</h2>
+								<p>Python</p>
+							</div>
+
+							<div class="col">
+								<h2>Les petits +</h2>
+								<p>Bootstrap 5</p>
+							</div>
+						</div> 
+
+						<div id="vitrine" class="row referencesImage">
+							<div id="tout" class="col-sm">
+								<h3>Mes instituts by Spa les 5 Sens</h3>
+								<a href="http://mesinstituts.fr/" target="_blank">
+									<img src="images/layout/instituts_references.jpg" class="sitePicture" alt="présentation du site Mes instituts Spa by les 5 Sens">
+								</a>
+							</div>
+
+							<div class="col-sm ">
+								<h3>FastochePC11</h3>
+								<a href="https://fastochepc11.com/" target="_blank">
+									<img src="images/layout/fastochePC11_references.jpg" class="sitePicture" alt="présentation du site de FastochePC11">
+								</a>
+
+							</div>
+						</div> 
+
+						<div id="cli" class="row referencesImage">
+							<div class="col-sm">
+								<h3>Application de lancer de dés</h3>
+									<img src="images/layout/dice_references.jpg" class="sitePicture" alt="présentation d'une application CLI de lancer de dés">
+							</div>
+
+							<div class="col-sm">
+								<h3>Application météo</h3>
+									<img src="images/layout/appli_cli_meteo_references.jpg" class="sitePicture" alt="présentation d'une application CLI de météo">
+							</div>
+						</div> 
+					</section>
 			</main>
 		</section> 
 		<!--Footer / Pied de page-->
@@ -72,7 +124,7 @@
 				<div class="row">
 					<div class="col">
 						<p><a href="https://www.linkedin.com/in/virginie-evrard/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a></p>
-						<p><a href="https://github.com/Virgin-ie" target="_blank"><i class="bi bi-github"></i> GitHub</a></p>
+						<p><a href="https://github.com/evrard-virginie" target="_blank"><i class="bi bi-github"></i> GitHub</a></p>
 					</div>
 					<div class="col">
 						<p><a href="contact.html"><i class="bi bi-envelope"></i> Contact</a></p>
@@ -86,6 +138,6 @@
 			</div>
 		</footer>
 		<!--Bootstrap Bundle avec Popper-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	</body>
 </html>
